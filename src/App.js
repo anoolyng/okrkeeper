@@ -10,8 +10,10 @@ function App( {user, tasks} ) {
           <ul>
               {tasks.map((entry, i) => (
                   <li key={i}>
-                      {entry.task}
-                      <Checkbox tasks={tasks} entry={entry} index={i} />
+                      <label>
+                          {entry.task}
+                          <Checkbox tasks={tasks} entry={entry} index={i} />
+                      </label>
                   </li>
               ))}
           </ul>
