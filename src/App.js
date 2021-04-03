@@ -1,5 +1,5 @@
 import React from "react";
-import Checkbox from './Checkbox.js';
+import TaskCheckbox from './TaskCheckbox.js';
 import './App.css';
 
 function App( {user, tasks} ) {
@@ -12,7 +12,7 @@ function App( {user, tasks} ) {
                   <li key={i}>
                       <label>
                           {entry.task}
-                          <Checkbox tasks={tasks} entry={entry} index={i} />
+                          <TaskCheckbox tasks={tasks} entry={entry} index={i} />
                       </label>
                   </li>
               ))}
